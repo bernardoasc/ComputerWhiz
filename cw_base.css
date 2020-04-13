@@ -1,0 +1,56 @@
+@charset "utf-8";
+
+/*	
+    Computer Whiz Store Reset Style Sheet
+    
+    Filename: cw_base.css
+	
+*/
+
+article, aside, figcaption, figure,footer, header, main, nav, section, li 
+{ display: block;}
+
+/*address, article, aside, blockquote, body, cite, div, dl, dt, dd, em, figcaption, figure, footer,h1, h2, h3, h4, h5, h6, header, html, img, li, main, nav, nav a, ol, p, section, span, ul, table, tr, td, th, col, colgroup
+ {
+   margin: 0;
+   padding: 0;
+   border: 0;
+   font-size: 100%;
+   background: transparent;
+   -webkit-box-sizing: border-box;
+   -moz-box-sizing: border-box;
+   box-sizing: border-box;  
+}
+*/
+body { line-height: 1.2em;
+		 min-height:100%;
+   		position:relative;
+}
+footer{
+	/*position:absolute;
+   bottom:0;
+   width:100%;
+   height:23%;    Height of the footer */
+}
+ul, ol {list-style: none;}
+
+nav ul {
+   list-style: none;
+   list-style-image: none;
+}
+
+nav a, body a, * {text-decoration: none;}
+
+header > nav{
+	background: linear-gradient(to bottom, rgb(3, 51, 86), black);
+	padding-bottom: 50px;
+	padding-top: 1px;
+}
+
+#dropNav > ul > li{
+				padding: 5px;
+			}
+
+			header > nav > ul> li{
+				text-align: center;
+			}

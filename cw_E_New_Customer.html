@@ -1,0 +1,163 @@
+<?php
+
+?>
+<html>
+	
+	<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title> New Customer </title>
+		<link href="cw_styles.css" rel="stylesheet" />
+		<link href="cw_base.css" rel="stylesheet" />
+		<style>
+			.formRowLeft{
+				float: left;
+				clear: left;
+				margin-right: 14px;
+				margin: 20px;
+				margin-left: 250px;
+			}
+			.formRowRight{
+				float: left;
+				margin: 20px;
+				margin-left: 50px;
+				margin-right: auto;
+			}
+			.formRowFarRight{
+				float: left;
+				margin: 20px;
+				margin-left: 390px;
+				margin-right: auto;
+			}
+			input, select{
+  				width: 100%;
+  				padding: 12px 20px;
+  				margin: 8px 0;
+  				box-sizing: border-box;
+				}
+		</style>
+	</head>
+	<body>
+		<header>
+			<img src="cw_header.png" alt="Computer Whiz" id="logoimg" />
+			<nav>
+				<ul>
+					<li><a href="cw_E_home.html">Home</a></li>
+					<li><a href="cw_E_inventory.html" >Inventory</a></li>
+					<li><a href="cw_E_customer_info.html">Customers</a></li>
+					<li><a href="cw_E_cashier.html">Cashier</a></li>
+					<li><a href="cw_E_index.html">Computer Whiz</a></li>
+				</ul>
+			</nav>				
+		</header>
+		
+		
+		<form id="newCust" method="post" action="cw_E_customer_info.html" style="float: none; clear: both;">
+			
+			<fieldset id="custInfo">
+					<legend>New Customer</legend>
+					
+					<div class="formRowLeft">
+						<label for="custFName">First Name</label><br />
+						<input name="custFname" id="fName" type="text" placeholder="First Name" required/>					
+						</div>
+						
+						<div class="formRowRight" >
+      					<label for="Address">Address</label> <br />
+      					<input name="Address" id="Address" type="text" placeholder="ap, street #, street" />
+											
+					</div>
+					
+					
+      				
+					
+					<div class="formRowLeft">
+      					<label for="custLName">Last Name</label> <br />
+      					<input name="custLName" id="lName" type="text" placeholder="Last Name" required />
+      				</div>
+      				
+      				<div class="formRowRight" >
+      					<label for="City">City</label> <br />
+      					<input name="City" id="City" type="text" placeholder="City" />
+      				</div>
+      				
+      				<div class="formRowLeft">
+      					<label for="email">E-mail</label> <br />
+      					<input name="email" id="email" type="text" placeholder="username@email"/>
+      				</div>
+      				
+      				<div class="formRowRight" >
+      					<label for="State">State</label> <br />
+      					<input name="State" id="State" type="text" placeholder="City" />
+      				</div>
+      				
+      				<div class="formRowLeft" >
+      					<label for="pNumber">Phone Number</label> <br />
+      					<input name="pNumber" id="pNumber" type="text" placeholder="###-###-####" required />
+      				</div>
+      				
+      				
+      				<div class="formRowRight" >
+      					<label for="Zip">Zip</label> <br />
+      					<input name="Zip" id="Zip" type="text" placeholder="A#A-#A#" />
+      				</div>
+      				
+      				<div class="formRowFarRight" >
+      					<label for="Disccount">Disccount</label> <br />
+      					<select name="Disccount" size="1" single required="">
+  						<option value="0" selected="">0%</option>
+  						<option value="5">5%</option>
+  						<option value="10">10%</option>
+  						<option value="15">15%</option>
+  						<option value="25">25% Employees only</option>
+						</select>
+      				</div>
+      				
+
+					
+      					<input onclick="location.href='cw_E_customer_info.html';" id="Add" type="submit" value="Add"/>
+													
+				</fieldset>
+			</form>
+		
+		
+		<footer>
+			<nav>
+         <ul>
+            <li><a href="cw_E_Us.html"">About Us</a></li>
+            <li><a href="cw_E_carrer.html"">Careers</a></li>
+            <li><a href="cw_E_news.html"">News</a></li>
+            <li><a href="cw_E_location.html">Our Locations</a></li>
+         </ul>
+           
+         <ul>
+            <li><a href="cw_E_home.html">My Account</a></li>
+            <li><a href="cw_E_support.html">Support</a></li>
+            <li><a href="cw_E_contact.html">Contact Us</a></li>
+            <li><a href="index.html">Log out</a></li>
+         </ul>                
+      </nav>
+		</footer>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	</body>
+</html>
+	
+</html>

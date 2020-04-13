@@ -1,0 +1,89 @@
+	<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title> Report </title>
+		<link href="cw_styles.css" rel="stylesheet" />
+		<link href="cw_base.css" rel="stylesheet" />
+		<style>
+			table, th, td {
+  				border: 1px solid black;
+  				border-collapse: collapse;
+						}
+			th, td {
+				text-align:center;
+				width: 20%;
+			}
+		</style>
+		<script>
+			function printImg(url) {
+  var win = window.open('');
+  win.document.write('<img src="' + url + '" onload="window.print();window.close()" />');
+  win.focus();
+  			}
+		</script>
+	</head>
+	<body>
+		<header>
+			<img src="cw_header.png" alt="Computer Whiz" id="logoimg" />
+			<nav>
+				<ul>
+					<li><a href="cw_E_home.html">Home</a></li>
+					<li><a href="cw_E_inventory.html" >Inventory</a></li>
+					<li><a href="cw_E_customer_info.html">Customers</a></li>
+					<li><a href="cw_E_cashier.html">Cashier</a></li>
+					<li><a href="cw_E_index.html">Computer Whiz</a></li>
+				</ul>
+			</nav>				
+		</header>
+		
+
+		<h3 style="clear: both;">Items Sold Recently</h3>
+		<table id="inventory" style="width: 100%">
+			<tr>
+				<th class="id">Item id #</th>
+				<th class="name">Item name</th>
+				<th class="price">Price</th>
+				<th class="stock">Items Sold</th>
+				<th class="date">Date</th>
+			</tr>
+			<tr>
+				<td class="id">#4719.92</td>
+				<td class="name">WD Red Pro WD121KFBX 12TB 7200 RPM 256MB Cache SATA 6.0Gb/s 3.5" Internal Hard Drive</td>
+				<td class="price">$559.98</td>
+				<td class="Sold">1</td>
+				<td class="date"> 15:45:31, February 25th, 2019</td>
+			</tr>
+			<tr>
+				<td colspan="2"></td>
+				<td>Total Recieved: $559.98</td>
+				<td>Total Sold: 1</td>
+				<td><input onclick="printImg('SalesReport2.jfif')" id="Print" type="button" value="Print Sales Report"/></td>
+				
+			</tr>
+		</table>
+		
+		
+		<footer>
+			<nav>
+         <ul>
+            <li><a href="cw_E_Us.html"">About Us</a></li>
+            <li><a href="cw_E_carrer.html"">Careers</a></li>
+            <li><a href="cw_E_news.html"">News</a></li>
+            <li><a href="cw_E_location.html">Our Locations</a></li>
+         </ul>
+           
+         <ul>
+            <li><a href="cw_E_home.html">My Account</a></li>
+            <li><a href="cw_E_support.html">Support</a></li>
+            <li><a href="cw_E_contact.html">Contact Us</a></li>
+            <li><a href="index.html">Log out</a></li>
+         </ul>                
+      </nav>
+		</footer>
+		
+		
+		
+	</body>
+	
+</html>

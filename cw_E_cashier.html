@@ -1,0 +1,162 @@
+
+	<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title> Cashier </title>
+		<link href="cw_styles.css" rel="stylesheet" />
+		<link href="cw_base.css" rel="stylesheet" />
+		<style>
+			tr{
+				
+				margin-bottom: 25px;
+				margin-top: 25px;
+			}
+			.id{
+				width: 10%;
+				float: left; 
+				clear: both;
+			}
+			.name{
+				width: 30%;
+				float: inherit;
+				clear: both;
+			}
+			.price{
+				width: 60%;
+				margin-right: 15px;
+				clear: both;
+				float: right;
+			}
+			#ItemInfo{
+				float: right;
+				background-color: rgb(213, 241, 255);
+			}
+			#findItem{
+				width: 30%;
+			}
+			#Items{
+				width: 70%;
+			}
+			input[type=button]{
+				padding: 6px 20px;
+				font-size: 15px;
+			}
+		</style>
+	</head>
+	<body>
+		<header>
+			<img src="cw_header.png" alt="Computer Whiz" id="logoimg" />
+			<nav>
+				<ul>
+					<li><a href="cw_E_home.html">Home</a></li>
+					<li><a href="cw_E_inventory.html" >Inventory</a></li>
+					<li><a href="cw_E_customer_info.html">Customers</a></li>
+					<li><a href="cw_E_cashier.html">Cashier</a></li>
+					<li><a href="cw_E_index.html">Computer Whiz</a></li>
+				</ul>
+			</nav>				
+		</header>
+		
+		
+		<form id="newCust" method="post" action="http://www.example.com/computerwhiz/addNew" style="float: none; clear: both;">
+			
+			<fieldset id="findItem">
+					<legend>Shop Now</legend>
+					
+					<div class="formRowLeft">
+						<label for="custFName">Scan Item Here</label><br />
+						<input autofocus="autofocus" onfocus="this.select()" name="Item" id="Item" type="text" required/>					
+						</div>
+						<br />
+						
+					<div class="formRowLeft">
+						<label for="custFName">Add customer to transaction</label><br />
+						<input name="custTransaction" id="custTransaction" type="text" placeholder="###-###-####" required/>							
+						<input name="custAddTransaction" id="custAddTransaction" type="button" value="add"/>
+						</div>
+						
+						<br />
+						<div class="formRowFarRight" >
+      					<label for="Disccount">Disccount</label> <br />
+      					<select name="Disccount" size="1" single required="">
+  						<option value="0" selected="">0%</option>
+  						<option value="5">5%</option>
+  						<option value="10">10%</option>
+  						<option value="15">15%</option>
+  						<option value="25">25% Employees only</option>
+						</select>
+      				</div>
+						
+						
+      				
+						<input id="Pay" type="submit" value="Pay"/>					
+				</fieldset>
+				<fieldset id="Items">
+				<legend>Items in Cart</legend>
+				<div id="ItemInfo" >
+
+      					<table>
+      						<tr>
+      							<td class="id">#4719.92</td>
+      							<td class="name">WD Red Pro WD121KFBX 12TB 7200 RPM 256MB Cache SATA 6.0Gb/s 3.5" Internal H ard Drive</td>
+      							<td class="price">$499.99</td>
+      						</tr>
+      						<tr id="taxes" style="border-bottom: 1px solid black">
+      							<td class="id" ></td>
+      							<td class="name">+ GST/HST</td>
+      							<td class="price">+ $59.99</td>
+      						</tr>
+      						<tr>
+      							<td class="id"></td>
+      							<td class="name">TOTAL</td>
+      							<td class="price">$559.98</td>
+      						</tr>
+      					</table>
+      				</div>
+      				
+      				
+
+					
+      					
+      					</fieldset>
+			</form>
+		
+		
+		<footer>
+			<nav>
+         <ul>
+            <li><a href="cw_E_Us.html"">About Us</a></li>
+            <li><a href="cw_E_carrer.html"">Careers</a></li>
+            <li><a href="cw_E_news.html"">News</a></li>
+            <li><a href="cw_E_location.html">Our Locations</a></li>
+         </ul>
+           
+         <ul>
+            <li><a href="cw_E_home.html">My Account</a></li>
+            <li><a href="cw_E_support.html">Support</a></li>
+            <li><a href="cw_E_contact.html">Contact Us</a></li>
+            <li><a href="index.html">Log out</a></li>
+         </ul>                
+      </nav>
+		</footer>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	</body>
+</html>

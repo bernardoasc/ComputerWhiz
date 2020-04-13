@@ -1,0 +1,93 @@
+<?php
+
+?>
+
+	
+	<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title> Customers </title>
+		<link href="cw_styles.css" rel="stylesheet" />
+		<link href="cw_base.css" rel="stylesheet" />
+		<style>
+			table, th, td {
+  				border: 1px solid black;
+  				border-collapse: collapse;
+						}
+			th, td {
+				text-align:center;
+				width: 20%;
+			}
+		</style>
+	</head>
+	<body>
+		<header>
+			<img src="cw_header.png" alt="Computer Whiz" id="logoimg" />
+			<nav>
+				<ul>
+					<li><a href="cw_E_home.html">Home</a></li>
+					<li><a href="cw_E_inventory.html" >Inventory</a></li>
+					<li><a href="cw_E_customer_info.html">Customers</a></li>
+					<li><a href="cw_E_cashier.html">Cashier</a></li>
+					<li><a href="cw_E_index.html">Computer Whiz</a></li>
+				</ul>
+			</nav>				
+		</header>
+		
+		<input id="AddNewCust" onclick="location.href='cw_E_New_Customer.php';" type="button" value="Add new customer"/>
+		<table width="100%">
+			<tr>
+				<th class="id">ID</th>
+				<th class="fName">First name</th>
+				<th class="lName">Last name</th>
+				<th class="contact">Phone Number</th>
+				<th class="info"></th>
+			</tr>
+			<tr>
+				<td class="id">1</td>
+				<td class="fName">Scott</td>
+				<td class="lName">Shaw</td>
+				<td class="contact">604-406-4604</td>
+				<td class="info"><input class="More" onclick="location.href='cw_E_eachCustomer.html';" type="button" value="See More"/></td>
+			</tr>
+		</table>
+		
+		
+		<footer>
+			<nav>
+         <ul>
+            <li><a href="cw_E_Us.html"">About Us</a></li>
+            <li><a href="cw_E_carrer.html"">Careers</a></li>
+            <li><a href="cw_E_news.html"">News</a></li>
+            <li><a href="cw_E_location.html">Our Locations</a></li>
+         </ul>
+           
+         <ul>
+            <li><a href="cw_E_home.html">My Account</a></li>
+            <li><a href="cw_E_support.html">Support</a></li>
+            <li><a href="cw_E_contact.html">Contact Us</a></li>
+            <li><a href="index.html">Log out</a></li>
+         </ul>                
+      </nav>
+		</footer>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	</body>
+</html>

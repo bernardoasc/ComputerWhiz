@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Log In</title>
+		<link href="cw_styles.css" rel="stylesheet" />
+		<link href="cw_base.css" rel="stylesheet" />
+		<script src="cw_account.js"></script>
+		<style>
+		</style>
+	</head>
+	<body>
+		<header>
+			<img src="cw_header.png" alt="Computer Whiz" id="logoimg" />
+			<nav>
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="cw_D_Location.html">Find Us</a></li>
+					<li><a href="cw_D_support.html">Support</a></li>
+					<li><a href="cw_D_contact.html">Contact</a></li>
+					<li><a href="cw_C_login.html">Login</a></li>
+				</ul>
+			</nav>				
+		</header>
+		<div class="content">
+		<article>
+		
+			<h1>Log in Your Account</h1>
+			<section>
+			<form id="account" method="get" action="http://www.example.com/computerwhiz/signin">
+			
+			<fieldset id="custInfo">
+					<legend>Log In</legend>
+					
+					<div class="formRow">
+						<label for="name">Email</label>
+						<input name="custEmail" id="name" type="text" required/>										
+					</div>
+			<div class="formRow">
+      					<label for="pass">Password</label> 
+      					<input name="custPass" id="pass" type="password" required />
+      				</div>
+			<!--Buttons-->
+      					<input id="Register" onclick="location.href='cw_C_CustomerRegister.html';" type="button" value="Register" />
+						<input onclick="location.href='cw_C_MyAccount.html';" id="Login" type="submit" value="Login" />	
+													
+				</fieldset>
+			</form>
+			</section>
+		</article>
+		</div>
+		<footer>
+			<nav>
+         <ul>
+            <li><a href="cw_D_Us.html"">About Us</a></li>
+            <li><a href="cw_D_carrer.html"">Careers</a></li>
+            <li><a href="cw_D_news.html"">News</a></li>
+            <li><a href="cw_D_location.html">Our Locations</a></li>
+         </ul>
+           
+         <ul>
+            <li><a href="cw_C_login.html">Log In</a></li>
+            <li><a href="cw_D_support.html">Support</a></li>
+            <li><a href="cw_D_contact.html">Contact Us</a></li>
+            <li><a href="cw_E_login.html">Employee Login</a></li>
+         </ul>                
+      </nav>
+		</footer>
+	</body>
+</html>

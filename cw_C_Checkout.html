@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title> Checkout </title>
+		<link href="cw_styles.css" rel="stylesheet" />
+		<link href="cw_base.css" rel="stylesheet" />
+		<style>
+			table, th, td {
+  				border: 1px solid black;
+  				border-collapse: collapse;
+						}
+			th, td {
+				text-align:center;
+				width: 20%;
+			}
+			h2{text-align: center;
+			padding-right: 35%;}
+			
+		</style>
+		<script>
+			function printImg(url) {
+  var win = window.open('');
+  win.document.write('<img src="' + url + '" onload="window.print();window.close()" />');
+  win.focus();
+  			}
+		</script>
+	</head>
+	<body>
+		<header>
+			<img src="cw_header.png" alt="Computer Whiz" id="logoimg" />
+			<nav>
+				<ul>
+					<li><a href="cw_C_home.html">Home</a></li>
+					<li><a href="cw_C_MyAccount.html" >My Account</a></li>
+					<li><a href="cw_C_support.html">Support</a></li>
+					<li><a href="cw_C_cart.html">Cart</a></li>
+					<li><a href="index.html">Log Out</a></li>
+				</ul>
+			</nav>				
+		</header>
+		
+
+		<h1>Thank you for Buying With us!</h1>
+		<h2><input onclick="printImg('invoice.PNG')" id="checkout" type="button" value="Print your Invoice here"/></h2>
+		<br><br><br><br>
+		
+		
+		
+		
+		<footer>
+			<nav>
+         <ul>
+            <li><a href="cw_C_Us.html"">About Us</a></li>
+            <li><a href="cw_C_carrer.html"">Careers</a></li>
+            <li><a href="cw_C_news.html"">News</a></li>
+            <li><a href="cw_C_location.html">Our Locations</a></li>
+         </ul>
+           
+         <ul>
+            <li><a href="cw_C_login.html">My Account</a></li>
+            <li><a href="cw_C_support.html">Support</a></li>
+            <li><a href="cw_C_contact.html">Contact Us</a></li>
+            <li><a href="cw_E_login.html">Employee Login</a></li>
+         </ul>                
+      </nav>
+		</footer>
+		
+		
+		
+	</body>
+	
+</html>
+	
